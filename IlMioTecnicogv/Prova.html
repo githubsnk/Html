@@ -1,0 +1,200 @@
+<!--Accordion https://www.w3schools.com/howto/howto_js_accordion.asp -->
+<!--CSS Layout Float https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_float -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Code Snippets</title>
+<meta charset="utf-8">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+var acc = document.getElementsByClassName("accordion");
+var i; -->
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30 px;
+  text-align: center;
+  font-size: 52px;
+  color: white;
+  
+  /*qui parte l'accordion */
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>CSS Layout Float</h2>
+<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+
+<header style="align-items: center;"> <!--<img src="Images/Greca.jpg" alt="SciFiSpace" height="200" width="1500"  >-->
+   <h3>my Technician</h3>
+</header>
+
+<!--Riquadro Code snippets-->
+<section>
+  <nav>
+    <ul>        <!-–qui utilizzo target per aprire il link in una NUOVA SCHEDA-–>  
+      <li><a href="Contacts.html">Contacts</a> <a href="WorkExperiences.html">Work Experiences</a> <a href="Hobbies.html">Hobbies</a>
+        <a href="CodeSnippets.html">Code Snippets</a></li>
+      <li> <h2>Code snippets</h2></li>
+      <li>       <a href="https://onlinegdb.com/KIW5P-SJ3"target=”_self”>CalcoloNumCasuali2</a></li> 
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>About me</h1>
+    <p style="text-align: justify;">I am a young self-taught computer scientist, passionate and fascinated by information technology.
+      This passion leads me to research and discover new methods and strategies to get  an unconventional way for problem's resolutions. 
+      My passion has led me to cover various roles, which to date have created a versatile profile, but still eager for professional growth. 
+      Currently I deal with remote and physical assistance for customers with business and not that assistance of IT consultancy, sale and repair of electronic 
+      devices, solutions for data storage, etc.
+      During the Covid period I offered assistance to many students and families who for the first time approached the world of information technology due to force majeure. 
+      This is allowed to me thanks to the notions learned in the years of studies in the IT field.</p>
+  </article>
+</section>
+
+<footer>
+  <p><a href="mailto:">info@ilmiotecnicogv.com</a></p>
+</footer>
+<button class="accordion">Section 1</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+
+<!--Accordion-->
+<script>
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      /* Toggle between adding and removing the "active" class,
+      to highlight the button that controls the panel */
+      this.classList.toggle("active");
+  
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
+  
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+  </script>
+
+
+</body>
+</html>
+

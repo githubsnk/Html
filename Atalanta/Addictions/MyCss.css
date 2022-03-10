@@ -1,0 +1,36 @@
+h1 {
+    text-align:center;
+}
+
+.centerImage {    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+  }
+.CenterTable {
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+img { /*Funziona questo quindi cancellare centerimage*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+
+}
+table, th, td {
+    border: 1px solid black;
+    }
+
+#myheader {
+    background-color: lightblue;
+    color: rgb(83, 6, 6);
+    padding: 40px;
+    text-align: center;
+    
+}

@@ -1,0 +1,41 @@
+<!-- https://www.w3schools.com/css/css_howto.asp
+    Riprendere il vostro sito sull'Atalanta, applicare stili CSS:
+    - almeno uno in un CSS esterno
+    - almeno uno in una parte di CSS <style> .... </style>
+    - almeno uno in line -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="Addictions/MyCss.css"> <!--path css. esterno-->
+<style> /*Css interno*/
+    p {
+        text-align: center;
+    }
+
+</style>
+<title>ATALANTA BERGAMO CALCIO</title>
+</head>
+<body>
+    <h1 id="myheader">ATALANTA BERGAMO CALCIO</h1>  <!--In MyCss.css si trova le proprietà impostata -->    
+  
+    <br>
+    <p>
+        <a href="Biglietti.html">Biglietti</a> | <a href="Sponsor.html">Sponsor</a> 
+    </p>
+    <br>
+    <br>
+<img src="Immagini/Squadra.jpg" alt="Squadra"; usemap="#Squadra"; ></img> <!--Utilizzo inline la classe che viene dal .css-->
+<map name="Squadra">
+    <area shape="rect" coords="81,9,108,62" alt="Giocatore1" href="Giocatore1.html">
+    <area shape="rect" coords="323,105,352,158" alt="Giocatore2" href="Giocatore2.html">
+    <area shape="rect" coords="499,102,535,152" alt="Giocatore3" href="Giocatore3.html">    
+  </map>
+  <br>
+  <img src="Immagini/figc.jpg" alt="FIGC"; usemap="#figc"; class="centerImage"; ></img> <!--Utilizzo inline la classe che viene dal .css-->
+<map name="figc">
+    <area shape="rect" coords="0,0,350,350" alt="Giocatore1" href="https://www.figc.it/it/home/">
+</map>
+
+</body>
+</html>
