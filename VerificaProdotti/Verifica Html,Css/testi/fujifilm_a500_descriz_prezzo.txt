@@ -1,0 +1,38 @@
+Codice: 
+0202
+
+Categoria:
+FOTO
+
+Prodotto:
+Fujifilm A500
+
+Miniatura: 
+(da cartella img)
+
+Caratteristiche Tecniche: (da esporre con elenco puntato)
+    * Risoluzione: 5,1 Megapixel
+    * Zoom ottico: 3 x
+    * Tipo di mirino: Ottico
+    * Dimensione display: 1,8 pollici
+    * Connettivita': USB 2.0
+    * Tipo di memoria: Interna, xD Picture
+    * Capacità di memoria: 12 MB
+    * Flash incorporato
+    * Tipo di sensore: ottico CCD
+    * Velocità otturatore: 2-1/1500 s
+    * Formato video: AVI
+    * Sensibilità ottica: ISO 100 , ISO 200 , ISO 400 , Auto
+    * Risoluzione video max: 640x480
+    * Formato immagine: JPEG
+    * Risoluzione immagine max: 2303x1728
+    * Tipo di batteria: 2xAA
+    * Messa a fuoco: Automatica
+    * Filtro occhi rossi
+    * Anno di introduzione: 2006
+    * Peso: 126 g
+    * Dimensioni: 9,3 x 2,8 x 6 cm
+    * Dotazione: Foderino 
+
+Prezzo: 
+€ 300

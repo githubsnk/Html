@@ -1,0 +1,20 @@
+Codice: 
+0102
+
+Categoria:
+TV
+
+Prodotto:
+L.G. MZ TV
+
+Miniatura: 
+(da cartella img)
+
+Caratteristiche Tecniche:
+TV LCD TFT 29", 16:9, Euro multisistema, Angolo visuale: 170°/170° (O/V), 
+Wide XGA 1280 x 768, contrasto 600:1.
+
+Prezzo:  
+€ 4.798
+
+
